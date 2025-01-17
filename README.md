@@ -1,53 +1,39 @@
 # Password Generator CLI
 
-This is a simple command-line interface (CLI) program that generates a random password for the user.
-
-## Features
-
-- Generates a random password of a specified length.
-- Supports password lengths from 1 to 32 characters.
-- Provides a help message with usage instructions.
+This is a simple command-line interface (CLI) program that generates a random password based on the user's specifications.
 
 ## Usage
 
-To use the password generator, run the following command:
+To run the password generator, use the following command:
 
 ```sh
-node index.js <length>
+node index.js [options]
 ```
 
-Replace `<length>` with the desired length of the password.
+### Options
 
-### Example
+- `-h`, `--help`: Show the help message and exit.
+- `--length <number>`: Specify the length of the password to generate (default is 8).
+- `--uppercase`: Include uppercase letters in the password.
+- `--numbers`: Include numbers in the password.
+- `--symbols`: Include symbols in the password.
+
+### Examples
+
+Generate a password of length 6 with uppercase letters and numbers:
 
 ```sh
-node index.js 12
+node index.js --length 6 --uppercase --numbers
 ```
 
 Output:
 
 ```
 ----- Password Generated -----
-Length: 12
-Password: a1b2c3d4e5f6
+Length:    6
+Password:  F3gH7t
 ```
-
-## Options
-
-- `-h`, `--help`: Show the help message and exit.
-
-## Error Handling
-
-The program includes error handling for the following cases:
-
-- If the length is not a number.
-- If the length is less than 1 or greater than 32.
-- If the length is not a whole number.
 
 ## License
 
 This project is licensed under the MIT License.
-
-## Author
-
-Alex Russell
