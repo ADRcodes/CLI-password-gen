@@ -1,0 +1,15 @@
+{
+  "name": "ar-s3-qap1-password-gen",
+  "version": "1.0.0",
+  "description": "A CLI program that generates a password for the user",
+  "main": "index.js",
+  "scripts": {
+    "example": "node index.js --length 10 --uppercase --numbers --symbols"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ADRcodes/CLI-password-gen.git"
+  },
+  "author": "Alex Russell",
+  "license": "MIT"
+}
